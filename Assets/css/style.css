@@ -173,13 +173,19 @@ nav a:hover {
 }
 
 .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--darkgrey);
-    position: relative;
+    padding: 10px;
 
 }
 
 /* Bottom right text */
 .project-label {
+    position: relative;
     bottom: 20px;
     background-color: black;
     color: var(--lightgreen);
@@ -194,6 +200,8 @@ nav a:hover {
     filter: alpha(opacity=20);
     transition: 0.2s;
 }
+
+
 
 /*----CONTACT SECTION - RESPONSIVE----*/
 
