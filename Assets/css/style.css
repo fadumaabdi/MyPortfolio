@@ -1,3 +1,5 @@
+/*----UNIVERSAL SELECTOR----*/
+
 * {
     box-sizing: border-box;
 }
@@ -28,7 +30,7 @@ input {
 }
 
 
-/* NAVIGATION*/
+/*----NAVIGATION----*/
 
 nav {
     display: flex;
@@ -42,8 +44,6 @@ nav {
     z-index: 1;
 
 }
-
-
 
 nav a {
     font-family: sans-serif, Arial, Helvetica;
@@ -69,7 +69,7 @@ nav a:hover {
     box-shadow: 5px 10px 30px rgba(0, 255, 128, 0.4);
 }
 
-/*HEADER*/
+/*----HERO----*/
 
 .hero {
     display: flex;
@@ -112,7 +112,7 @@ nav a:hover {
     transform: translate(40%, -10%);
 }
 
-
+/*----MAIN SECTION FORMATTING----*/
 .section-area {
     display: flex;
     box-shadow: 0 0 1em #000000;
@@ -126,6 +126,7 @@ nav a:hover {
 
 }
 
+/*----ABOUT/WORK SECTION FORMATTING----*/
 .section-area h3 {
     margin-left: 30px;
     margin-right: 200px;
@@ -151,7 +152,7 @@ nav a:hover {
 }
 
 
-/* Content */
+/*----WORK PORTFOLIO SECTION----*/
 .portfolio-container {
     background-color: #191919;
     position: relative;
@@ -168,7 +169,6 @@ nav a:hover {
     padding-right: 20px;
 }
 
-
 #work a:hover {
     border-bottom: 2px solid #9dea90;
     box-shadow: 10px 10px 10px rgba(0, 255, 128, 0.4);
@@ -177,11 +177,13 @@ nav a:hover {
     transition: 0.2s;
 }
 
+/*----CONTACT SECTION - RESPONSIVE----*/
+
 .row {
     margin: 8px -16px;
 }
 
-/* Add padding BETWEEN each column (if you want) */
+/* Add padding BETWEEN each column */
 .row,
 .row>.column {
     padding: 8px;
@@ -200,7 +202,7 @@ nav a:hover {
     clear: both;
 }
 
-/* Style inputs */
+/* CONTACT FORM */
 input[type=text],
 select,
 textarea {
@@ -225,7 +227,7 @@ input[type=submit]:hover {
     box-shadow: 5px 10px 30px rgba(0, 255, 128, 0.4);
 }
 
-/* Style the container/contact section */
+/* CONTACT CONTAINER */
 .contact-container {
     border-radius: 5px;
     background-color: #191919;
@@ -251,7 +253,7 @@ input[type=submit]:hover {
     clear: both;
 }
 
-
+/*----FOOTER SECTION----*/
 .footer {
     position: absolute;
     margin-bottom: 10px;
@@ -288,14 +290,17 @@ input[type=submit]:hover {
     color: #ffffff;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+
+/*----RESPONSIVE LAYOUTS----*/
+
+/* makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
     .column {
         width: 50%;
     }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
