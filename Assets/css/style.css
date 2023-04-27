@@ -34,6 +34,15 @@ input {
     border: none;
 }
 
+#work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 
 /*----NAVIGATION----*/
 
@@ -158,6 +167,11 @@ nav a:hover {
 
 
 /*----WORK PORTFOLIO SECTION----*/
+
+.column-full-width{
+    width: 100%;
+}
+
 .portfolio-container {
     background-color: var(--darkgrey);
     position: relative;
@@ -166,7 +180,6 @@ nav a:hover {
 
 /* Bottom right text */
 .project-label {
-    position: absolute;
     bottom: 20px;
     background-color: black;
     color: var(--lightgreen);
