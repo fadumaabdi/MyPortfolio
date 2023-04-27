@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, Arial, Helvetica;
+    background-color: #191919;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+
+/* NAVIGATION*/
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 10px 30px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+
+}
+
+
+
+nav a {
+    font-family: sans-serif, Arial, Helvetica;
+    height: 40px;
+    line-height: 60px;
+    margin: 15px;
+    padding: 0px 20px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: 0.6s ease;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #9dea90;
+    box-shadow: 5px 10px 30px rgba(0, 255, 128, 0.4);
+}
+
+.active {
+    border-bottom: 1px solid #9dea90;
+    box-shadow: 5px 10px 30px rgba(0, 255, 128, 0.4);
+}
+
+/*HEADER*/
+
+.hero {
+    display: flex;
+    height: 600px;
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.hero h1 {
+    font-size: 24px;
+    margin: 60px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 84px;
+    margin: 60px;
+    color: #fff;
+}
+
+.hero h2 span {
+    color: #9dea90;
+}
+
+.hero p {
+    color: #fff;
+    font-size: 24px;
+    margin-left: 60px;
+}
+
+.hero div {
+    flex: 0 0 45%;
+}
+
+.hero img {
+    flex: 0 0 45%;
+    transform: translate(40%, -10%);
+}
+
+
+.section-area {
+    display: flex;
+    box-shadow: 0 0 1em #000000;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    line-height: 25px;
+    color: #fff;
+    align-items: center;
+
+}
+
+.section-area h3 {
+    margin-left: 30px;
+    margin-right: 200px;
+    padding: 10px;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 50px;
+    color: #9dea90;
+}
+
+.section-area h4 {
+    margin-left: 30px;
+    margin-right: 200px;
+    padding: 30px;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 50px;
+    color: #9dea90;
+}
+
+.section-area p {
+    margin-right: 30px;
+}
+
+
+/* Content */
+.portfolio-container {
+    background-color: #191919;
+    position: relative;
+
+}
+
+/* Bottom right text */
+.project-label {
+    position: absolute;
+    bottom: 20px;
+    background-color: black;
+    color: #9dea90;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+#work a:hover {
+    border-bottom: 2px solid #9dea90;
+    box-shadow: 10px 10px 10px rgba(0, 255, 128, 0.4);
+    opacity: 0.7;
+    filter: alpha(opacity=20);
+    transition: 0.2s;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row>.column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style inputs */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #9dea90;
+    color: #191919;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    border-bottom: 1px solid #000000;
+    box-shadow: 5px 10px 30px rgba(0, 255, 128, 0.4);
+}
+
+/* Style the container/contact section */
+.contact-container {
+    border-radius: 5px;
+    background-color: #191919;
+    padding: 10px;
+}
+
+.contact-container p {
+    text-align: left;
+}
+
+/* Create two columns that float next to eachother */
+.contact-column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.contact-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.footer {
+    position: absolute;
+    margin-bottom: 10px;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h6 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
