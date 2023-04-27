@@ -1,5 +1,10 @@
 
-
+:root {
+    --lightgreen: #9dea90;
+    --darkgreen: rgba(0, 255, 128, 0.4);
+    --white: #ffffff;
+    --darkgrey: #191919
+  }
 * {
     box-sizing: border-box;
 }
@@ -8,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif, Arial, Helvetica;
-    background-color: #191919;
+    background-color: var(--darkgrey);
 }
 
 header {
@@ -54,19 +59,19 @@ nav a {
     font-size: 0.7rem;
     text-transform: uppercase;
     font-weight: 400;
-    color: #fff;
+    color: var(--white);
     letter-spacing: 1px;
     transition: 0.6s ease;
 }
 
 nav a:hover {
-    border-bottom: 1px solid #9dea90;
-    box-shadow: 5px 10px 30px rgba(0, 255, 128, 0.4);
+    border-bottom: 1px solid var(--lightgreen);
+    box-shadow: 5px 10px 30px var(--darkgreen);
 }
 
 .active {
-    border-bottom: 1px solid #9dea90;
-    box-shadow: 5px 10px 30px rgba(0, 255, 128, 0.4);
+    border-bottom: 1px solid var(--lightgreen);
+    box-shadow: 5px 10px 30px var(--darkgreen);
 }
 
 /*----HERO----*/
@@ -84,21 +89,21 @@ nav a:hover {
     font-size: 24px;
     margin: 60px;
     margin-top: 30px;
-    color: #fff;
+    color: var(--white);
 }
 
 .hero h2 {
     font-size: 84px;
     margin: 60px;
-    color: #fff;
+    color: var(--white);
 }
 
 .hero h2 span {
-    color: #9dea90;
+    color: var(--lightgreen);
 }
 
 .hero p {
-    color: #fff;
+    color: var(--white);
     font-size: 24px;
     margin-left: 60px;
 }
@@ -121,7 +126,7 @@ nav a:hover {
     margin-left: 60px;
     margin-right: 60px;
     line-height: 25px;
-    color: #fff;
+    color: var(--white);
     align-items: center;
 
 }
@@ -134,7 +139,7 @@ nav a:hover {
     font-size: 3rem;
     font-weight: 600;
     line-height: 50px;
-    color: #9dea90;
+    color: var(--lightgreen);
 }
 
 .section-area h4 {
@@ -144,7 +149,7 @@ nav a:hover {
     font-size: 3rem;
     font-weight: 600;
     line-height: 50px;
-    color: #9dea90;
+    color: var(--lightgreen);
 }
 
 .section-area p {
@@ -154,7 +159,7 @@ nav a:hover {
 
 /*----WORK PORTFOLIO SECTION----*/
 .portfolio-container {
-    background-color: #191919;
+    background-color: var(--darkgrey);
     position: relative;
 
 }
@@ -164,14 +169,14 @@ nav a:hover {
     position: absolute;
     bottom: 20px;
     background-color: black;
-    color: #9dea90;
+    color: var(--lightgreen);
     padding-left: 20px;
     padding-right: 20px;
 }
 
 #work a:hover {
-    border-bottom: 2px solid #9dea90;
-    box-shadow: 10px 10px 10px rgba(0, 255, 128, 0.4);
+    border-bottom: 2px solid var(--lightgreen);
+    box-shadow: 10px 10px 10px var(--darkgreen);
     opacity: 0.7;
     filter: alpha(opacity=20);
     transition: 0.2s;
@@ -215,7 +220,7 @@ textarea {
 }
 
 input[type=submit] {
-    background-color: #9dea90;
+    background-color: var(--lightgreen);
     color: #191919;
     padding: 12px 20px;
     border: none;
@@ -224,13 +229,13 @@ input[type=submit] {
 
 input[type=submit]:hover {
     border-bottom: 1px solid #000000;
-    box-shadow: 5px 10px 30px rgba(0, 255, 128, 0.4);
+    box-shadow: 5px 10px 30px var(--darkgreen);
 }
 
 /* CONTACT CONTAINER */
 .contact-container {
     border-radius: 5px;
-    background-color: #191919;
+    background-color: var(--darkgrey);
     padding: 10px;
 }
 
@@ -263,7 +268,7 @@ input[type=submit]:hover {
     height: auto;
     width: 100vw;
     padding-top: 20px;
-    color: #fff;
+    color: var(--white);
 }
 
 .footer-content {
@@ -278,7 +283,7 @@ input[type=submit]:hover {
     font-size: 1.1rem;
     font-weight: 500;
     text-transform: capitalize;
-    color: #fff;
+    color: var(--white);
     margin-bottom: 5px;
 }
 
@@ -287,7 +292,7 @@ input[type=submit]:hover {
     margin: 10px auto;
     line-height: 10px;
     font-size: 14px;
-    color: #ffffff;
+    color: var(--white);
 }
 
 
