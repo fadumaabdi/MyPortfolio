@@ -29,13 +29,13 @@ Navigation bars at the top right corner of the website allow a user to navigate 
 
 Each placeholder image in the work section can be clicked. This will in future redirect a user to the deployed application.
 
-![Website Screenshot](./Assets/images/portfolioscreenshot.png)
+![Website Screenshot](./images/portfolioscreenshot.png)
 
 ## Links
 [Click here to access the deployed website.](https://fadumaabdi.github.io/MyPortfolio/)
 
 [Click here to access the files on the github repository.](https://github.com/fadumaabdi/MyPortfolio)
 
-© -2023 Faduma Abdi
+© 2023 Faduma Abdi
 
 
