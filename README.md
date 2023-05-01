@@ -36,6 +36,6 @@ Each placeholder image in the work section can be clicked. This will in future r
 
 [Click here to access the files on the github repository.](https://github.com/fadumaabdi/MyPortfolio)
 
-© 2023 Faduma Abdi
+© -2023 Faduma Abdi
 
 
